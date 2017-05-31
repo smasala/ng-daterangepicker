@@ -160,10 +160,6 @@ export class NgDateRangePickerComponent implements ControlValueAccessor, OnInit 
     return dateFns.format(value, this.options.outputFormat);
   }
 
-  formatDate(value: Date) {
-    return dateFns.format(value, this.options.outputFormat);
-  }
-
   formatTime(value: Date) {
     return dateFns.format(value, this.options.timeFormat);
   }
