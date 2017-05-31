@@ -51,8 +51,8 @@ export class AppComponent {
 	  presetNames: ['This Month', 'Last Month', 'This Week', 'Last Week', 'This Year', 'Last Year', 'Start', 'End'],
 	  outputFormat: 'DD/MM/YYYY',
 	  startOfWeek: 1,
-    showTime: true,
-    timeFormat: 'HH:mm:ss'
+	  showTime: true,
+	  timeFormat: 'HH:mm:ss'
 	};
   }
 }
@@ -74,6 +74,8 @@ export interface NgDateRangePickerOptions {
   dateFormat: string;
   outputFormat: string;
   startOfWeek: number;
+  showTime?: boolean;
+  timeFormat?: 'HH:mm:ss' | 'HH:mm';
 }
 ```
 
