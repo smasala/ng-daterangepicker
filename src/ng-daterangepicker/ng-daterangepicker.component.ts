@@ -11,6 +11,8 @@ export interface NgDateRangePickerOptions {
   startOfWeek?: number;
   showTime?: boolean;
   timeFormat?: 'HH:mm:ss' | 'HH:mm';
+  // needed for: Element implicitly has an 'any' type because type has no index signature
+  [key: string]: any;
 }
 
 export interface IDay {
