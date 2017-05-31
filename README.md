@@ -71,7 +71,6 @@ export interface NgDateRangePickerOptions {
   range: 'tm' | 'lm' | 'lw' | 'tw' | 'ty' | 'ly';
   dayNames: string[];
   presetNames: string[];
-  dateFormat: string;
   outputFormat: string;
   startOfWeek: number;
   showTime?: boolean;
