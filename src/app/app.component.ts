@@ -19,7 +19,8 @@ export class AppComponent implements OnInit  {
       outputFormat: 'DD/MM/YYYY',
       startOfWeek: 0,
       showTime: true,
-      timeFormat: 'HH:mm:ss'
+      timeFormat: 'HH:mm:ss',
+      container: 'app-root'
     };
   }
 }
