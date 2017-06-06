@@ -46,21 +46,8 @@ import { NgDateRangePickerOptions } from 'ng-daterangepicker';
   templateUrl: 'app.component.html'
 })
 export class AppComponent {
-  options: NgDateRangePickerOptions;
+  options: NgDateRangePickerOptions;  // = {} see NgDateRangePickerOptions
 
-  ngOnInit() {
-    this.options = {
-	  theme: 'default',
-	  range: 'tm',
-	  dayNames: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
-	  presetNames: ['This Month', 'Last Month', 'This Week', 'Last Week', 'This Year', 'Last Year', 'Start', 'End',
-                        'Hours', 'Minutes', 'Seconds'],
-	  outputFormat: 'DD/MM/YYYY',
-	  startOfWeek: 1,
-	  showTime: true,
-	  timeFormat: 'HH:mm:ss'
-	};
-  }
 }
 ```
 
@@ -81,6 +68,7 @@ export interface NgDateRangePickerOptions {
   startOfWeek?: number;
   showTime?: boolean;
   timeFormat?: 'HH:mm:ss' | 'HH:mm';
+  container?: false | string;
 }
 ```
 
