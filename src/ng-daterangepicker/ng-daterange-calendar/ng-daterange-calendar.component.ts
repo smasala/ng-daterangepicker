@@ -91,8 +91,8 @@ export class NgDateRangeCalendarComponent implements OnInit {
             } as ClientRect;
         }
         let el: HTMLElement = this.element.nativeElement;
-        el.style.top = (this.coords.bottom + 75) + 'px';
-        el.style.left = this.coords.left + 'px';
+        el.style.top = (Math.floor(this.coords.bottom) + 75) + 'px';
+        el.style.left = Math.floor(this.coords.left) + 'px';
         el.style.position = 'absolute';
     }
 
