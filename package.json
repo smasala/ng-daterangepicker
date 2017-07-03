@@ -1,6 +1,6 @@
 {
   "name": "ng-daterangepicker-ext",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Angular PayPal Datepicker",
   "main": "bundles/ng-daterangepicker.umd.js",
   "module": "index.js",
