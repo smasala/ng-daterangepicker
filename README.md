@@ -13,13 +13,13 @@ Demo: http://ng-daterangepicker.jankuri.com
 ### Installation
 
 ```sh
-npm install ng-daterangepicker2 --save
+npm install ng-daterangepicker-ext --save
 ```
 
 or
 
 ```sh
-yarn add ng-daterangepicker2 --save
+yarn add ng-daterangepicker-ext --save
 ```
 
 ### Example
