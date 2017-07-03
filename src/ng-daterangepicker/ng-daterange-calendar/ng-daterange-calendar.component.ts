@@ -80,8 +80,10 @@ export class NgDateRangeCalendarComponent implements OnInit {
     }
 
     showAt(): void {
+        let top: number = 0;
         if (this.target) {
             this.coords = this.target.getBoundingClientRect();
+            top = this.coords.top + 30;
         } else {
             this.coords = {
                 top: 0,
@@ -89,9 +91,10 @@ export class NgDateRangeCalendarComponent implements OnInit {
                 bottom: 0,
                 right: 0
             } as ClientRect;
+            top = this.coords.top + 75;
         }
         let el: HTMLElement = this.element.nativeElement;
-        el.style.top = (Math.floor(this.coords.bottom) + 75) + 'px';
+        el.style.top = Math.floor(top) + 'px';
         el.style.left = Math.floor(this.coords.left) + 'px';
         el.style.position = 'absolute';
     }
